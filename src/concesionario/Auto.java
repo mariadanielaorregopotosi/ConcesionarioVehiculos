@@ -10,12 +10,11 @@
 package concesionario;
 
 public class Auto extends Vehiculo {
+    //constructor
+    public Auto(String codigo, String marca, int modelo, double kilometraje){
+        super(codigo, marca, "Auto", modelo, kilometraje);
+    }
 
-    @Override
-    public String toString() {
-        return "Auto{" + '}';
-    }
-    public Auto(String codigo, String marca, int modelo,double kilometraje){
-        super(codigo, marca, "Auto", modelo,kilometraje);
-    }
+    
 }
+

@@ -11,6 +11,7 @@ package concesionario;
 
 public class Motocicleta extends Vehiculo {
 
+    //constructor
     public Motocicleta(String codigo, String marca, int modelo, double kilometraje) {
         super(codigo, marca, "Motocicleta", modelo, kilometraje);
     }

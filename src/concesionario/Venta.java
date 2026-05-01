@@ -17,8 +17,8 @@ public class Venta {
                 "montoVenta=" + montoVenta +
                 ", codigoVehiculo=" + codigoVehiculo + ","
                 + " apellido=" + apellido + ","
-                + " nombre=" + nombre + ", documento=" +
-                documento + '}';
+                + " nombre=" + nombre + ","
+                + " documento=" + documento + '}';
     }
     private  double montoVenta;
     private  String codigoVehiculo;

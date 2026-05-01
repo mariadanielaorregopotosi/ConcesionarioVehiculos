@@ -12,6 +12,7 @@ package concesionario;
 import concesionario.Vehiculo;
 
 public class Camioneta extends Vehiculo{
+//constructor
    public Camioneta(String codigo, String marca, int modelo, double kilometraje) {
        super(codigo,marca,"Camioneta", modelo,kilometraje);
    }
