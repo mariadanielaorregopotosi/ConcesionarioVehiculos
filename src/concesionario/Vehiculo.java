@@ -13,11 +13,62 @@ package concesionario;
  * se creo clase padre
  */
 public class Vehiculo {
-    protected String codigo;
-    protected String marca;
-    protected String tipo;
-    protected int modelo;
-    protected double kilometraje;
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "codigo=" + codigo + ","
+                + " marca=" + marca + ","
+                + " tipo=" + tipo + ","
+                + " modelo=" + modelo + ","
+                + " kilometraje=" + kilometraje + '}';
+    }
+    private String codigo;
+    private String marca;
+    private String tipo;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    public double getKilometraje() {
+        return kilometraje;
+    }
+
+    public void setKilometraje(double kilometraje) {
+        this.kilometraje = kilometraje;
+    }
+    private int modelo;
+    private double kilometraje;
+    
+    //metodo contructor
     
     public Vehiculo(String codigo,String marca, String tipo, int modelo, double kilometraje){
         this.codigo = codigo;
@@ -32,7 +83,7 @@ public class Vehiculo {
         System.out.println("codigo:"+ codigo);
         System.out.println("Marca:" + marca);
         System.out.println("Tipo:"+ tipo);
-        System.out.println("Modelo"+ modelo);
+        System.out.println("Modelo:"+ modelo);
         System.out.println("Kilometraje:"+ kilometraje);
         
     }

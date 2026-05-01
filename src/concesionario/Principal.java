@@ -16,13 +16,13 @@ public class Principal {
         Motocicleta moto1 = new Motocicleta("M001", "yamaha", 2023, 5000);
         
         System.out.println("Vehiculos Disponibles:");
-        auto1.mostrarDatos();
+       System.out.println(auto1);
         
         System.out.println("Camionetas disponibles:");
-        camioneta1.mostrarDatos();
+        System.out.println(camioneta1);
         
         System.out.println("Motos diaponibles:");
-        moto1.mostrarDatos();
+        System.out.println(moto1);
         
         System.out.println("Registro de ventas:");
          
@@ -34,7 +34,7 @@ public class Principal {
                 "1020485467"
         );
         
-        venta1.mostrarVenta();
+        System.out.println(venta1);
                
         
         

@@ -10,11 +10,21 @@
 package concesionario;
 
 public class Venta {
-    private final double montoVenta;
-    private final String codigoVehiculo;
-    private final String apellido;
-    private final String nombre;
-    private final String documento;
+
+    @Override
+    public String toString() {
+        return "Venta{" + 
+                "montoVenta=" + montoVenta +
+                ", codigoVehiculo=" + codigoVehiculo + ","
+                + " apellido=" + apellido + ","
+                + " nombre=" + nombre + ", documento=" +
+                documento + '}';
+    }
+    private  double montoVenta;
+    private  String codigoVehiculo;
+    private  String apellido;
+    private  String nombre;
+    private  String documento;
     
     public Venta(double montoVenta,String codigoVehiculo,String apellido, String nombre, String documento){
         this.montoVenta = montoVenta;
