@@ -25,6 +25,8 @@ public class Vehiculo {
     private String codigo;
     private String marca;
     private String tipo;
+    private int modelo;
+    private double kilometraje;
 
     public String getCodigo() {
         return codigo;
@@ -65,9 +67,6 @@ public class Vehiculo {
     public void setKilometraje(double kilometraje) {
         this.kilometraje = kilometraje;
     }
-    private int modelo;
-    private double kilometraje;
-    
     //metodo contructor
     
     public Vehiculo(String codigo,String marca, String tipo, int modelo, double kilometraje){
